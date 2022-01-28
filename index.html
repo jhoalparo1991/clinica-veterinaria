@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Administrador de citas de veterinaria</h1>
+      <div class="card">
+        <section class="card-left">
+          <p class="datos-paciente">Datos del paciente</p>
+          <form class="formulario" id="formulario" autocomplete="off">
+            <div class="group">
+              <label for="mascota">Nombre mascota</label>
+              <input
+                type="text"
+                name="mascota"
+                id="mascota"
+                class="mascota"
+                placeholder="Nombre de la mascota"
+              />
+            </div>
+            <div class="group">
+              <label for="propietario">Propietario</label>
+              <input
+                type="text"
+                name="propietario"
+                id="propietario"
+                class="propietario"
+                placeholder="Nombre del propietario"
+              />
+            </div>
+            <div class="group">
+              <label for="telefono">Telefono</label>
+              <input
+                type="tel"
+                name="telefono"
+                id="telefono"
+                class="telefono"
+                placeholder="Nùmero de telefono"
+              />
+            </div>
+            <div class="group">
+              <label for="fecha">Fecha</label>
+              <input type="date" name="fecha" id="fecha" class="fecha" />
+            </div>
+            <div class="group">
+              <label for="hora">Hora</label>
+              <input type="time" name="hora" id="hora" class="hora" />
+            </div>
+            <div class="group">
+              <label for="sintomas">Sintomas</label>
+              <textarea
+                name="sintomas"
+                id="sintomas"
+                cols="30"
+                rows="3"
+                placeholder="Sintomas..."
+              ></textarea>
+            </div>
+            <div class="group-button">
+                <button class="btn btn-success btn-lg" id="btn-save">Crear cita</button>
+            </div>
+          </form>
+        </section>
+        <section class="card-right">
+            <p id="no-citas"></p>
+            <div class="citas">
+                
+            </div>
+        </section>
+      </div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
